@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: cloud-89
+  name: nodeapp
   labels:
-    app: cloud-89
+    app: nodeapp
 spec:
   containers:
-    - name: cloud-89
-      image: abhisekh89/webapp:v1
+    - name: nodeapp
+      image: kammana/nodeapp:v1
       ports:
         - containerPort: 8080
