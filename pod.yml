@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cloud-89
+  labels:
+    app: cloud-89
+spec:
+  containers:
+    - name: cloud-89
+      image: abhisekh89/webapp:v1
+      ports:
+        - containerPort: 8080
